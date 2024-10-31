@@ -33,16 +33,31 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
 
+    // Core
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
     implementation(libs.androidx.activity)
+
+    // Material Design
+    implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
+
+    // JUnit Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // PayBox SDK
+    //noinspection UseTomlInstead
+    implementation (libs.kotlin.paybox.sdk)
+
+    implementation (libs.play.services.wallet)
+
 }

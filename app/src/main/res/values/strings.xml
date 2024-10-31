@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">FreedomPay</string>
+    <!-- Описание содержимого для PaymentView -->
+    <string name="payment_view_desc">Payment view for processing transactions</string>
+
+    <!-- Описание содержимого для кнопки Google Pay -->
+    <string name="google_pay_button_desc">Google Pay checkout button</string>
+
+    <!-- Прочие ресурсы -->
+    <string name="google_pay_button_text">Pay with Google</string>
+    <string name="payment_processing">Processing your payment...</string>
+    <string name="payment_successful">Payment successful!</string>
+    <string name="payment_failed">Payment failed. Please try again.</string>
 </resources>
